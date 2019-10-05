@@ -42,7 +42,7 @@ class CompactTests(unittest.TestCase):
         output = compact(nums)
         self.assertEqual(iter(output), iter(output))
         self.assertEqual(next(output), 1)
-        self.assertEqual(next(output), 2)
+        self.assertEqual(next(nums), 2)
 
 
 if __name__ == "__main__":

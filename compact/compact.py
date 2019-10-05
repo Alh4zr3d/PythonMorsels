@@ -1,8 +1,9 @@
 from itertools import groupby
 
 def compact(data):
-    cmpcted = [i for i,_ in groupby(data)]
-    return iter(cmpcted)
+    return(i for i,_ in groupby(data))
+#    cmpcted = [i for i,_ in groupby(data)]
+#    return iter(cmpcted)
 
 # data = [1, 1, 2, 2, 3, 2]
 # groups = []
