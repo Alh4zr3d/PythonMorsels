@@ -1,7 +1,11 @@
 def tail(seq,num):
-    lst = list(seq)
+    result = []
     if num <= 0:
-        result = []
+        return result
+    elif num == 1:
+        for n in seq:
+            result = [n]
     else:
-        result = lst[-num:]
+        for n in seq:
+            result = [*result[-(num-1):],n]
     return result
