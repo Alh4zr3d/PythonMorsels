@@ -21,14 +21,14 @@ class CountWordsTests(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+#    @unittest.expectedFailure
     def test_capitalization(self):
         actual = count_words("Oh what a day what a lovely day")
         expected = {'oh': 1, 'what': 2, 'a': 2, 'day': 2, 'lovely': 1}
         self.assertEqual(actual, expected)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+#    @unittest.expectedFailure
     def test_symbols(self):
         actual = count_words("¿Te gusta Python?")
         expected = {'te': 1, 'gusta': 1, 'python': 1}
