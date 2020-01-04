@@ -1,5 +1,3 @@
-# Python goes here
-
 class EasyDict(object):
 
     def __init__(self,_dict={},normalize=False,**kwargs):
